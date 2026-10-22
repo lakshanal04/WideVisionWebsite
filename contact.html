@@ -66,6 +66,21 @@
 </a>
 </div>
 </section>
+<section class="section shell chat-section" aria-labelledby="chat-title" data-chat data-endpoint="https://widevision-chat.widevision-chat.workers.dev">
+<div class="chat-intro">
+<p class="eyebrow">Project brief assistant</p>
+<h2 id="chat-title">Describe your project in VFX terms.</h2>
+<p>Not sure how to put your idea into words? Chat with our AI assistant to shape a clear brief, then email it to us. Please avoid sharing confidential material in the chat.</p>
+</div>
+<div class="chat-box">
+<div class="chat-log" role="log" aria-live="polite" aria-label="Chat conversation"></div>
+<form class="chat-form">
+<label class="sr-only" for="chat-input">Your message</label>
+<input class="chat-input" id="chat-input" type="text" maxlength="2000" autocomplete="off" placeholder="Describe your project…">
+<button class="button button-primary chat-send" type="submit">Send</button>
+</form>
+</div>
+</section>
 <section class="section shell contact-grid">
 <div class="contact-intro reveal">
 <p class="eyebrow">Studio locations</p>
@@ -109,6 +124,8 @@
 </span> WideVision VFX Studio</p>
 </div>
 </footer>
+<script src="chat.js">
+</script>
 <script src="script.js">
 </script>
 </body>

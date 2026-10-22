@@ -1,0 +1,10 @@
+name = "widevision-chat"
+main = "index.js"
+compatibility_date = "2025-01-01"
+
+[ai]
+binding = "AI"
+
+[vars]
+# Comma-separated list of sites allowed to call this worker
+ALLOWED_ORIGINS = "https://lakshanal04.github.io,http://localhost:8082"
