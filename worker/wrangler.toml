@@ -7,4 +7,4 @@ binding = "AI"
 
 [vars]
 # Comma-separated list of sites allowed to call this worker
-ALLOWED_ORIGINS = "https://lakshanal04.github.io,http://localhost:8082"
+ALLOWED_ORIGINS = "https://lakshanal04.github.io"
