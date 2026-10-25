@@ -44,7 +44,7 @@
         history.push({ role: "assistant", text: res.data.reply });
       })
       .catch(function () {
-        pending.textContent = "Sorry, the assistant is unavailable. Please email us directly.";
+        pending.textContent = "Sorry, the assistant is unavailable right now (it may have reached its daily limit). Please try again later or email rekhamohan@widevisionvfxstudio.com directly.";
         history.pop();
       })
       .finally(function () {

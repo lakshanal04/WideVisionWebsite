@@ -1,5 +1,6 @@
-const MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
+const MODEL = "@cf/meta/llama-3.1-8b-instruct-fp8";
 const MAX_MESSAGES = 30;
+const CONTEXT_MESSAGES = 14;
 const MAX_CHARS = 2000;
 
 const SYSTEM_PROMPT = `You are the project intake assistant for WideVision VFX Studio (Chennai and Coimbatore, India), which creates visual effects for movies, short films, and advertising films.
@@ -52,8 +53,8 @@ export default {
     let reply = "";
     try {
       const result = await env.AI.run(MODEL, {
-        messages: [{ role: "system", content: SYSTEM_PROMPT }, ...input],
-        max_tokens: 1024,
+        messages: [{ role: "system", content: SYSTEM_PROMPT }, ...input.slice(-CONTEXT_MESSAGES)],
+        max_tokens: 700,
         temperature: 0.6,
       });
       reply = result.response || "";
